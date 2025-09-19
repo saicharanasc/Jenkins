@@ -8,18 +8,18 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                echo 'Building version ${params.Version} for environment ${params.ENV}...'
+                echo "Building version ${params.Version} for environment ${params.ENV}..."
             }
            
         }
         stage('Test'){
             steps{
-                echo 'Testing.....'
+                echo "Testing....."
             }
         }
         stage('Deploy'){
             steps{
-                echo 'Deploying ${params.Version} to ${params.ENV}...'
+                echo "Deploying ${params.Version} to ${params.ENV}..."
             }
             
         }
